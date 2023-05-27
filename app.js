@@ -4,7 +4,7 @@ const PORT = 3500
 const todo_items = require('./routes/todo_items')
 
 app.use(express.urlencoded({extended: true}))
-app.use(express.json)
+app.use(express.json())
 
 app.get('/', (request, response)=>{
     response.send('Working')
